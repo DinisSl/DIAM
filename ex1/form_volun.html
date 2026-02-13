@@ -8,11 +8,14 @@
 
     <header>
         <h1>Formulário</h1>
+        <p>Esta página destina-se a jovens que em troco de uma entrada gratuita na corrida,
+            realizam uma pequena tarefa</p>
     </header>
 
     <nav>
       <a href="index.html">Home</a>
     </nav>
+    <br>
 
     <form action="process_form.html" method="post">
         <label for="data_inicio">Data de início:</label><br>
@@ -20,8 +23,15 @@
 
         <label for="data_fim">Data fim:</label><br>
         <input type="datetime-local" name="data_fim" id="data_fim"><br>
-
-        <input type="submit" value="Submeter">
+        <br>
+        <fieldset>
+            <legend>Tarefa a realizar</legend>
+            <input type="radio" name="gr1" value="agua">Distribuir águas<br>
+            <input type="radio" name="gr1" value="peitorais">Entregar os peitorais<br>
+            <input type="radio" name="gr1" value="medalhas">Entregar medalhas na meta<br>
+            <input type="radio" name="gr1" value="limpezas" checked>Apoiar nas limpezas
+        </fieldset>
+        <input type="submit" value="Enviar resposta">
     </form>
 
 </body>
