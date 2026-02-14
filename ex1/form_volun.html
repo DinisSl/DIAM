@@ -7,17 +7,22 @@
 <body>
 
     <header>
-        <h1>Formulário</h1>
-        <p>Esta página destina-se a jovens que em troco de uma entrada gratuita na corrida,
+        <h1 style="text-align: center">Formulário</h1>
+        <p style="text-align: center">Esta página destina-se a jovens que em troco de uma entrada gratuita na corrida,
             realizam uma pequena tarefa</p>
     </header>
 
     <nav>
-      <a href="index.html">Home</a>
+        <h3 style="text-align:center">
+            <a href="./index.html">
+                <img src="imagens/casa.png" alt="imagem de uma casa" style="width: 50px">
+            </a>
+        </h3>
+        <h3 style="text-align:center"> <a href="./form_volun.html"> Formulário Voluntários </a> </h3>
     </nav>
     <br>
 
-    <form action="process_form.html" method="post">
+    <form style="text-align: center" action="process_form.html" method="post">
         <label for="data_inicio">Data de início:</label><br>
         <input type="datetime-local" name="data_inicio" id="data_inicio"><br>
 
@@ -33,6 +38,10 @@
         </fieldset>
         <input type="submit" value="Enviar resposta">
     </form>
+
+    <footer>
+        <p style="text-align: center">2026 Corrida de S. Silvestre Porto</p>
+    </footer>
 
 </body>
 </html>
