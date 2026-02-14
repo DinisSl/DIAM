@@ -12,17 +12,38 @@
             realizam uma pequena tarefa</p>
     </header>
 
-    <nav>
-        <h3 style="text-align:center">
-            <a href="./index.html">
-                <img src="imagens/casa.png" alt="imagem de uma casa" style="width: 50px">
-            </a>
-        </h3>
-        <h3 style="text-align:center"> <a href="./form_volun.html"> Formulário Voluntários </a> </h3>
+    <!-- tentei com figcaption n deu(dava warning) -->
+    <nav style="text-align:center">
+        <a href="./index.html">
+            <img src="imagens/casa.png" alt="Imagem de uma casa" style="width:50px"><br>
+            Home
+        </a>
     </nav>
     <br>
 
     <form style="text-align: center" action="process_form.html" method="post">
+
+        <label for="nome">Nome:</label><br>
+        <input type="text" name="nome" id="nome"><br>
+
+        <label for="indicativo">Indicativo:</label><br>
+        <select name="indicativo" id="indicativo">
+            <option value="+351">+351 (Portugal)</option>
+            <option value="+34">+34 (Espanha)</option>
+            <option value="+33">+33 (França)</option>
+        </select>
+        <br>
+
+        <label for="telemovel">Número de Telemóvel:</label><br>
+        <input type="tel" name="telemovel" id="telemovel"
+           pattern="[0-9]{9}"
+           placeholder="9 dígitos"
+           >
+        <br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" name="email" id="email"><br>
+
         <label for="data_inicio">Data de início:</label><br>
         <input type="datetime-local" name="data_inicio" id="data_inicio"><br>
 
