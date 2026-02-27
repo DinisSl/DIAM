@@ -1,6 +1,9 @@
 *{
-font-family: sans-serif;
+    font-family: sans-serif;
+    box-sizing: border-box;
 }
+
+
 
 body{
     margin: 0 auto;
@@ -38,7 +41,88 @@ nav li {
 
 }
 
+.container {
+    margin: 0;
+    display: flex;
+    flex-flow: row wrap;
+    border: 1px solid darkblue;
+    text-align: center;
+}
 
+.container img {
+    max-width: 100%;
+}
+
+#box1 {
+    width: 48%;
+    background-color: navajowhite;
+    margin: 1%;
+    padding: 20px;
+}
+
+#box2 {
+    width: 48%;
+    background-color: #e9f7ef;
+    margin: 1%;
+    text-align: center;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+#box2 img {
+    display: block;
+    margin: 0 auto;
+    max-width: 70%;
+    height: auto;
+}
+
+#box3 {
+    width: 98%;
+    background-color: #fef9e7;
+    margin: 1%;
+    text-align: center;
+    gap: 20px;
+    padding: 20px 40px;
+}
+
+#box3 figure {
+    display: inline-block;
+    margin: 0 20px;
+}
+
+#box3 img {
+    width: 150px;
+    height: 120px;
+    display: block;
+    margin: 0 auto;
+}
+
+#box3 figcaption {
+    margin-top: 8px;
+    font-size: 14px;
+    text-align: center;
+}
+
+#box4 {
+    width: 48%;
+    background-color: #fbeee6;
+    margin: 1%;
+}
+
+#box5 {
+    width: 48%;
+    background-color: #e9f7ef;
+    margin: 1%;
+}
+
+#box6 {
+    width: 98%;
+    background-color: #fef9e7;
+    margin: 1%;
+    text-align: center;
+    gap: 20px;
+    padding: 20px 40px;
+}
 
 
 
