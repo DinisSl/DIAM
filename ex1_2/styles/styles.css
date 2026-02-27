@@ -29,3 +29,18 @@ header h1{
     margin-bottom: 55px;
 }
 
+form {
+    padding: 0 5%;
+}
+
+form div input, form div select {
+    padding: 8px;
+    border: 1px solid grey;
+    border-radius: 4px;
+    font-family: inherit;
+}
+
+.phone-container {
+    display: flex;
+    gap: 3px;
+}

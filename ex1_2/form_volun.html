@@ -13,7 +13,6 @@
             realizam uma pequena tarefa</p>
     </header>
 
-    <!-- tentei com figcaption n deu(dava warning) -->
     <nav>
         <a href="./index.html">
             <img src="imagens/casa.png" alt="imagem de uma casa" >
@@ -25,34 +24,40 @@
     <br>
 
     <form action="process_form.html" method="post">
+        <div>
+            <label for="nome">Nome:</label><br>
+            <input type="text" name="nome" id="nome">
+            <br><br>
 
-        <label for="nome">Nome:</label><br>
-        <input type="text" name="nome" id="nome"><br>
+            <label for="indicativo">Telemóvel:</label><br>
+            <div class="phone-container">
+                <select name="indicativo" id="indicativo">
+                    <option value="+351">+351 (Portugal)</option>
+                    <option value="+34">+34 (Espanha)</option>
+                    <option value="+33">+33 (França)</option>
+                </select>
 
-        <label for="indicativo">Indicativo:</label><br>
-        <select name="indicativo" id="indicativo">
-            <option value="+351">+351 (Portugal)</option>
-            <option value="+34">+34 (Espanha)</option>
-            <option value="+33">+33 (França)</option>
-        </select>
+                <input type="tel" name="telemovel" id="telemovel"
+                   pattern="[0-9]{9}"
+                   placeholder="9 dígitos"
+                   >
+            </div>
+            <br>
+
+            <label for="email">Email:</label><br>
+            <input type="email" name="email" id="email">
+            <br><br>
+
+            <label for="data_inicio">Data de início:</label><br>
+            <input type="datetime-local" name="data_inicio" id="data_inicio">
+            <br><br>
+
+            <label for="data_fim">Data fim:</label><br>
+            <input type="datetime-local" name="data_fim" id="data_fim">
+            <br><br>
+        </div>
         <br>
 
-        <label for="telemovel">Número de Telemóvel:</label><br>
-        <input type="tel" name="telemovel" id="telemovel"
-           pattern="[0-9]{9}"
-           placeholder="9 dígitos"
-           >
-        <br>
-
-        <label for="email">Email:</label><br>
-        <input type="email" name="email" id="email"><br>
-
-        <label for="data_inicio">Data de início:</label><br>
-        <input type="datetime-local" name="data_inicio" id="data_inicio"><br>
-
-        <label for="data_fim">Data fim:</label><br>
-        <input type="datetime-local" name="data_fim" id="data_fim"><br>
-        <br>
         <fieldset>
             <legend>Tarefa a realizar</legend>
             <input type="radio" name="gr1" value="agua">Distribuir águas<br>
