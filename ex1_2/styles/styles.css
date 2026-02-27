@@ -1,0 +1,31 @@
+*{
+font-family: sans-serif;
+}
+
+body{
+    margin: 0 auto;
+}
+
+
+
+header{
+    background-image: url("../imagens/54c5815a31ac8f192f91881c41e4476b.jpeg") ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    margin: 0 auto;
+}
+
+ nav{
+    background-color:lightgoldenrodyellow;
+    ;
+}
+ nav img{
+     width: 50px;
+ }
+
+header h1{
+    color:white;
+    margin-bottom: 55px;
+}
+
