@@ -143,3 +143,85 @@ form div input, form div select {
     display: flex;
     gap: 3px;
 }
+
+
+.footer {
+  background-color: #292929;
+  color: #ccc;
+  padding: 40px 20px 10px;
+  font-family: Arial, sans-serif;
+}
+
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap:30px;
+  align-items: flex-start;
+}
+
+/* Colunas */
+.footer-col {
+  /*width: 220px;
+  margin-bottom: 20px;*/
+  flex:1 1 180px;
+  max-width: 220px;
+}
+
+/* Títulos */
+.footer h4 {
+  margin-bottom: 15px;
+  color: white;
+}
+
+/* Listas */
+.footer ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer ul li {
+  margin-bottom: 8px;
+}
+
+/* Links */
+.footer a {
+  text-decoration: none;
+  color: #ccc;
+}
+
+.footer a:hover {
+  color: white;
+}
+
+/* Formulário */
+.footer input {
+  padding: 8px;
+  border: none;
+  margin-top: 5px;
+}
+
+.footer form{
+    padding: 0;
+}
+
+.footer button {
+  padding: 8px 12px;
+  border: none;
+  background: #444;
+  color: white;
+  cursor: pointer;
+}
+
+.footer button:hover {
+  background: #666;
+}
+
+/* Parte de baixo */
+.footer-bottom {
+  text-align: center;
+  border-top: 1px solid #444;
+  margin-top: 20px;
+  padding-top: 10px;
+  font-size: 14px;
+}
