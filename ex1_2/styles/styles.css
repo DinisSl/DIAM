@@ -15,30 +15,44 @@ header{
     background-image: url("../imagens/cartaz.jpeg") ;
     background-repeat: no-repeat;
     background-size: cover;
-    text-align: center;
-}
-header h1{
-    color:white;
-    font-size:30px ;
-    margin: 0 auto;
-}
- nav{
-    background-color:lightgoldenrodyellow;
-     list-style-type: none;
+    background-position: center;
+    height: 400px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
 }
 
- nav ul{
-     margin: 0 auto;
- }
+nav {
+    background-color: lightgoldenrodyellow;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    display: flex;
+    justify-content: center;
+}
 
 nav li {
-    display: inline-block;
-    font-size: 12px;
-    padding: 15px;
-    padding-bottom: 0;
-    padding-top: 0;
+    margin: 0 20px;
+}
 
+nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    padding: 15px 0;
+    display: block;
+}
 
+nav a:hover {
+    color: darkred;
+    border-bottom: 3px solid darkred;
 }
 
 .container {
