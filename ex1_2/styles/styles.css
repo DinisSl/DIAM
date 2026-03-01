@@ -166,20 +166,19 @@ form div input, form div select {
   font-family: Arial, sans-serif;
 }
 
+.footer p {
+  margin: 0 0 8px 0;
+}
 
 .footer-container {
   display: flex;
-  flex-wrap: wrap;
   gap:30px;
-  align-items: flex-start;
+  width: 100%;
 }
 
 /* Colunas */
 .footer-col {
-  /*width: 220px;
-  margin-bottom: 20px;*/
-  flex:1 1 180px;
-  max-width: 220px;
+  flex: 1;
 }
 
 /* Títulos */
