@@ -63,6 +63,10 @@ nav a:hover {
     text-align: center;
 }
 
+.container a:hover {
+    color: darkred;
+}
+
 .container img {
     max-width: 100%;
 }
@@ -76,7 +80,7 @@ nav a:hover {
 
 #box2 {
     width: 48%;
-    background-color: #e9f7ef;
+    background-color: papayawhip;
     margin: 1%;
     text-align: center;
     padding-top: 80px;
@@ -92,7 +96,7 @@ nav a:hover {
 
 #box3 {
     width: 98%;
-    background-color: #fef9e7;
+    background-color: lightcyan;
     margin: 1%;
     text-align: center;
     gap: 20px;
@@ -121,11 +125,14 @@ nav a:hover {
     width: 48%;
     background-color: #fbeee6;
     margin: 1%;
+    padding: 25px 30px;
 }
+
+
 
 #box5 {
     width: 48%;
-    background-color: #e9f7ef;
+    background-color: white;
     margin: 1%;
 }
 
@@ -134,13 +141,24 @@ nav a:hover {
     background-color: #fef9e7;
     margin: 1%;
     text-align: center;
-    gap: 20px;
-    padding: 20px 40px;
+    padding: 30px 40px;
 }
 
+#box6 table {
+    margin: 0 auto 30px auto;
+    width: 90%;
+    border-collapse: collapse;
+}
 
+#box6 th, #box6 td {
+    padding: 12px 10px;
+    border-bottom: 1px solid #ccc;
+}
 
-
+#box6 th {
+    background-color: #f0e8c8;
+    font-weight: bold;
+}
 
 form {
     padding: 0 5%;
