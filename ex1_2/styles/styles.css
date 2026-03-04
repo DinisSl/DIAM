@@ -45,21 +45,22 @@ nav li {
 nav a {
     text-decoration: none;
     color: #333;
-    font-weight: bold;
+    font-weight: 900;
     padding: 15px 0;
     display: block;
+    font-size: 1.5em;
 }
 
 nav a:hover {
     color: darkred;
-    border-bottom: 3px solid darkred;
+    border-bottom: 0 solid darkred;
 }
 
 .container {
     margin: 0;
     display: flex;
     flex-flow: row wrap;
-    border: 1px solid darkblue;
+    border: 2px solid darkblue;
     text-align: center;
 }
 
@@ -94,6 +95,10 @@ nav a:hover {
     height: auto;
 }
 
+#box2 figcaption {
+    padding-top: 10px;
+}
+
 #box3 {
     width: 98%;
     background-color: lightcyan;
@@ -115,7 +120,8 @@ nav a:hover {
     margin: 0 auto;
 }
 
-#box3 figcaption {
+#box3 figcaption,
+#box5 figcaption {
     margin-top: 8px;
     font-size: 14px;
     text-align: center;
@@ -127,9 +133,11 @@ nav a:hover {
     margin: 1%;
     padding: 25px 30px;
 }
-#box7 {
-    margin-top: 5px;
+
+#box4 ul {
+    list-style-type: none;
 }
+
 #box5 {
     width: 48%;
     background-color: white;
@@ -160,18 +168,34 @@ nav a:hover {
     font-weight: bold;
 }
 
+#submit-button {
+    margin: 10px 0;
+    padding: 8px 16px;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+form fieldset input {
+    cursor: pointer;
+}
+
 form {
     padding: 0 5%;
 }
 
-form div input, form div select {
+form div input,
+form div select,
+form fieldset {
     padding: 8px;
     border: 1px solid grey;
     border-radius: 4px;
     font-family: inherit;
+    width: max-content;
 }
 
-.phone-container {
+#phone-container {
     display: flex;
     gap: 3px;
 }
@@ -260,4 +284,11 @@ form div input, form div select {
   margin-top: 20px;
   padding-top: 10px;
   font-size: 14px;
+}
+
+#gato-louco {
+    width: 500px;
+    height: 500px;
+    display: block;
+    margin: 20px auto;
 }

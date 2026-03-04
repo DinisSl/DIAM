@@ -13,20 +13,14 @@
     </header>
 
     <nav>
-     <ul>
-         <li>
-             <a href="./index.html">
-            <h3> <strong>Home</strong></h3>
-            </a>
-         </li>
-         <li>
-             <a href="./form_volun.html">
-             <h3> <strong>Formulário</strong></h3>
-            </a>
-         </li>
-
-     </ul>
-
+        <ul>
+            <li>
+                <a href="./index.html">Home</a>
+            </li>
+            <li>
+                <a href="./form_volun.html">Formulário</a>
+            </li>
+        </ul>
     </nav>
     <br>
 
@@ -37,7 +31,7 @@
             <br><br>
 
             <label for="indicativo">Telemóvel:</label><br>
-            <div class="phone-container">
+            <div id="phone-container">
                 <select name="indicativo" id="indicativo">
                     <option value="+351">+351 (Portugal)</option>
                     <option value="+34">+34 (Espanha)</option>
@@ -63,16 +57,15 @@
             <input type="datetime-local" name="data_fim" id="data_fim">
             <br><br>
         </div>
-        <br>
 
+        <label>Tarefa a realizar</label>
         <fieldset>
-            <legend>Tarefa a realizar</legend>
             <input type="radio" name="gr1" value="agua">Distribuir águas<br>
             <input type="radio" name="gr1" value="peitorais">Entregar os peitorais<br>
             <input type="radio" name="gr1" value="medalhas">Entregar medalhas na meta<br>
             <input type="radio" name="gr1" value="limpezas">Apoiar nas limpezas
         </fieldset>
-        <input id="box7" type="submit" value="Enviar resposta">
+        <input id="submit-button" type="submit" value="Enviar resposta">
     </form>
 
     <footer class="footer">
