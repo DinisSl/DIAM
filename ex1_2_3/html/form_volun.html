@@ -24,49 +24,61 @@
     </nav>
     <br>
 
-    <form action="process_form.html" method="post">
-        <div>
-            <label for="nome">Nome:</label><br>
-            <input type="text" name="nome" id="nome">
-            <br><br>
+    <main>
+        <div class="container">
+            <div id="box0-container">
+                <form action="process_form.html" method="post">
+                    <div>
+                        <label for="nome">Nome:</label><br>
+                        <input type="text" name="nome" id="nome">
+                        <br><br>
 
-            <label for="indicativo">Telemóvel:</label><br>
-            <div id="phone-container">
-                <select name="indicativo" id="indicativo">
-                    <option value="+351">+351 (Portugal)</option>
-                    <option value="+34">+34 (Espanha)</option>
-                    <option value="+33">+33 (França)</option>
-                </select>
+                        <label for="indicativo">Telemóvel:</label><br>
+                        <div id="phone-container">
+                            <select name="indicativo" id="indicativo">
+                                <option value="+351">+351 (Portugal)</option>
+                                <option value="+34">+34 (Espanha)</option>
+                                <option value="+33">+33 (França)</option>
+                            </select>
 
-                <input type="tel" name="telemovel" id="telemovel"
-                   pattern="[0-9]{9}"
-                   placeholder="9 dígitos"
-                   >
+                            <input type="tel" name="telemovel" id="telemovel"
+                               pattern="[0-9]{9}"
+                               placeholder="9 dígitos"
+                               >
+                        </div>
+                        <br>
+
+                        <label for="email">Email:</label><br>
+                        <input type="email" name="email" id="email">
+                        <br><br>
+
+                        <label for="data_inicio">Data de início:</label><br>
+                        <input type="datetime-local" name="data_inicio" id="data_inicio">
+                        <br><br>
+
+                        <label for="data_fim">Data fim:</label><br>
+                        <input type="datetime-local" name="data_fim" id="data_fim">
+                        <br><br>
+                    </div>
+
+                    <label>Tarefa a realizar</label>
+                    <fieldset>
+                        <label><input type="radio" name="gr1" value="agua">Distribuir águas</label><br>
+                        <label><input type="radio" name="gr1" value="peitorais">Entregar os peitorais</label><br>
+                        <label><input type="radio" name="gr1" value="medalhas">Entregar medalhas na meta</label><br>
+                        <label><input type="radio" name="gr1" value="limpezas">Apoiar nas limpezas</label>
+                    </fieldset>
+                    <input id="submit-button" type="submit" value="Enviar resposta">
+                </form>
             </div>
-            <br>
 
-            <label for="email">Email:</label><br>
-            <input type="email" name="email" id="email">
-            <br><br>
-
-            <label for="data_inicio">Data de início:</label><br>
-            <input type="datetime-local" name="data_inicio" id="data_inicio">
-            <br><br>
-
-            <label for="data_fim">Data fim:</label><br>
-            <input type="datetime-local" name="data_fim" id="data_fim">
-            <br><br>
+        <div id="box1-container">
+            <img src="../imagens/voluntarios.png" alt="voluntários">
         </div>
 
-        <label>Tarefa a realizar</label>
-        <fieldset>
-            <input type="radio" name="gr1" value="agua">Distribuir águas<br>
-            <input type="radio" name="gr1" value="peitorais">Entregar os peitorais<br>
-            <input type="radio" name="gr1" value="medalhas">Entregar medalhas na meta<br>
-            <input type="radio" name="gr1" value="limpezas">Apoiar nas limpezas
-        </fieldset>
-        <input id="submit-button" type="submit" value="Enviar resposta">
-    </form>
+        </div>
+    </main>
+
 
     <footer class="footer">
     <div class="footer-container">

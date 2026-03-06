@@ -58,7 +58,6 @@ nav a:hover {
     margin: 0;
     display: flex;
     flex-flow: row wrap;
-    border: 2px solid darkblue;
     text-align: center;
 }
 
@@ -112,7 +111,7 @@ nav a:hover {
 }
 
 /*
-*****************************************************************************************
+*********************** Index **************************************************************
 */
 
 #box1 {
@@ -211,6 +210,30 @@ nav a:hover {
     font-weight: bold;
 }
 
+/*
+*********************** Formulário **************************************************************
+*/
+
+#box0-container {
+    width: 28%;
+    text-align: left;
+    margin: 3%;
+}
+
+#box1-container {
+    width: 50%;
+    display: flex;
+    text-align: right;
+}
+
+#box1-container img {
+    margin: 10px;
+}
+
+#phone-container {
+    gap: 3px;
+}
+
 #submit-button {
     margin: 10px 0;
     padding: 8px 16px;
@@ -220,12 +243,9 @@ nav a:hover {
     cursor: pointer;
 }
 
-form fieldset input {
+form fieldset label,
+form fieldset input{
     cursor: pointer;
-}
-
-form {
-    padding: 0 5%;
 }
 
 form div input,
@@ -238,16 +258,26 @@ form fieldset {
     width: max-content;
 }
 
-#phone-container {
-    display: flex;
-    gap: 3px;
-}
+/*
+*********************** Candidatura Aceite **************************************************************
+*/
 
 #candidatura-aceite {
     text-align: center;
     color: green;
     font-weight: 900;
 }
+
+#gato-louco {
+    width: 500px;
+    height: 500px;
+    display: block;
+    margin: 20px auto;
+}
+
+/*
+*********************** Footer **************************************************************
+*/
 
 .footer {
   background-color: #292929;
@@ -329,9 +359,3 @@ form fieldset {
   font-size: 14px;
 }
 
-#gato-louco {
-    width: 500px;
-    height: 500px;
-    display: block;
-    margin: 20px auto;
-}
