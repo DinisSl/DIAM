@@ -33,7 +33,7 @@ function resetTimer() {
 }
 
 /*
-Utilizei a ajuda de um LLM na função arrow para implementar a funcionalidade de
+Utilizei a ajuda de um LLM para criar a função arrow para implementar a funcionalidade de
 dar reset ao timer de forma a quando se carrega num botão não haver a chance
 da imagem trocar imediatamente a seguir.
 */
