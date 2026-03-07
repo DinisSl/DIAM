@@ -1,6 +1,6 @@
 let timer = setInterval(mudarImagemForward, 3000);
 
-let arrPos = 1;
+let arrPos = 0;
 
 const imgs = [
     {path: "../imagens/slides-1.png"},
@@ -49,3 +49,28 @@ document.getElementById("forward").addEventListener(
         resetTimer();
 });
 
+//b)//
+function verificarComentario() {
+
+    let texto = document.getElementById("comentario").value.toLowerCase();
+    let botao = document.getElementById("submit-button");
+    let mensagem = document.getElementById("mensagem");
+
+    const palavrasObscenas = ["alcoviteiro", "biltre", "beocio", "beócio", "calhorda", "energúmeno", "energumeno", "janota", "mentecapto",
+    "mequetrefe", "mocorongo", "paspalho", "palerma", "patife", "pulha", "purgante", "sacripanta"];
+    let encontrou = false;
+
+    for (let palavra of palavrasObscenas) {
+        if (texto.includes(palavra)) {
+            encontrou = true;
+        }
+    }
+
+    if (encontrou) {
+        mensagem.textContent = "Modere a sua linguagem. Precisa de pimenta na língua!";
+        botao.disabled = true;
+    } else {
+        mensagem.textContent = "";
+        botao.disabled = false;
+    }
+}

@@ -67,7 +67,15 @@
                         <label><input type="radio" name="gr1" value="peitorais">Entregar os peitorais</label><br>
                         <label><input type="radio" name="gr1" value="medalhas">Entregar medalhas na meta</label><br>
                         <label><input type="radio" name="gr1" value="limpezas">Apoiar nas limpezas</label>
-                    </fieldset>
+                    </fieldset><br>
+
+                    <!-- Semana 3 -->
+                    <label for="comentario">Comentário sobre o evento:</label><br>
+                    <textarea id="comentario" name="comentario" rows="4" oninput="verificarComentario()"></textarea>
+
+                    <p id="mensagem" style="color:red;"></p>
+
+
                     <input id="submit-button" type="submit" value="Enviar resposta">
                 </form>
             </div>
@@ -156,5 +164,6 @@
     </div>
   </footer>
 
+  <script src="../js/script.js"></script>
 </body>
 </html>
