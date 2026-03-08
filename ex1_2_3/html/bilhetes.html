@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bilhetes</title>
+     <link rel="stylesheet" type="text/css" href="../css/styles.css">
+</head>
+
+
+
+<body>
+
+<header>
+
+    </header>
+
+    <nav>
+        <ul>
+            <li>
+                <a href="./index.html">Home</a>
+            </li>
+            <li>
+                <a href="form_volun.html">Formulário</a>
+            </li>
+            <li>
+                <a href="./bilhetes.html">Bilhetes</a>
+            </li>
+        </ul>
+    </nav>
+
+<div class="corrida-container">
+
+    <div class="ticket">
+        <h3>Inscrição Corrida 10km (€15)</h3>
+        <button onclick="alterarQuantidade('corrida', -1)">-</button>
+        <span id="qtd-corrida">0</span>
+        <button onclick="alterarQuantidade('corrida', 1)">+</button>
+    </div>
+
+    <div class="ticket">
+        <h3>Inscrição Caminhada 5km (€10)</h3>
+        <button onclick="alterarQuantidade('caminhada', -1)">-</button>
+        <span id="qtd-caminhada">0</span>
+        <button onclick="alterarQuantidade('caminhada', 1)">+</button>
+    </div>
+
+    <div class="ticket">
+        <h3>Kit Premium (€25)</h3>
+        <button onclick="alterarQuantidade('premium', -1)">-</button>
+        <span id="qtd-premium">0</span>
+        <button onclick="alterarQuantidade('premium', 1)">+</button>
+    </div>
+
+    <h2>Total: €<span id="total">0</span></h2>
+
+    <button id="comprar" onclick="comprar()">Comprar</button>
+
+</div>
+
+    <script src="../js/script.js" defer></script>
+
+</body>
+</html>

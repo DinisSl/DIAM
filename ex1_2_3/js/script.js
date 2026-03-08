@@ -1,3 +1,57 @@
+//BIlhetes
+ let precos = {
+        corrida: 15,
+        caminhada: 10,
+        premium: 25
+    }
+
+    let quantidades = {
+        corrida: 0,
+        caminhada: 0,
+        premium: 0
+    }
+
+
+    function alterarQuantidade(tipo, valor) {
+
+        quantidades[tipo] += valor
+
+        if (quantidades[tipo] < 0) {
+            quantidades[tipo] = 0
+        }
+
+        document.getElementById("qtd-" + tipo).textContent = quantidades[tipo]
+
+        atualizarTotal()
+    }
+
+    function atualizarTotal() {
+
+        let total =
+            quantidades.corrida * precos.corrida +
+            quantidades.caminhada * precos.caminhada +
+            quantidades.premium * precos.premium
+
+        document.getElementById("total").textContent = total
+    }
+
+    function comprar() {
+
+
+    alert("Compra realizada com sucesso!");
+
+
+    for (let tipo in quantidades) {
+        quantidades[tipo] = 0;
+        document.getElementById("qtd-" + tipo).textContent = 0;
+    }
+
+
+    document.getElementById("total").textContent = 0;
+    }
+
+
+
 let timer = setInterval(mudarImagemForward, 3000);
 
 let arrPos = 0;
@@ -32,7 +86,7 @@ function resetTimer() {
     timer = setInterval(mudarImagemForward, 3000);
 }
 
-/*
+/* SlideShow
 Utilizei a ajuda de um LLM para criar a função arrow para implementar a funcionalidade de
 dar reset ao timer de forma a quando se carrega num botão não haver a chance
 da imagem trocar imediatamente a seguir.
@@ -74,3 +128,8 @@ function verificarComentario() {
         botao.disabled = false;
     }
 }
+
+
+
+
+
