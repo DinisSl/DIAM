@@ -54,6 +54,15 @@ nav a:hover {
     border-bottom: 0 solid darkred;
 }
 
+#contador {
+    background-color: #fff8d6;
+    text-align: center;
+    font-size: 2em;
+    font-weight: bold;
+    padding: 15px 0;
+    border-bottom: 2px solid #e0d9b5;
+}
+
 .container {
     margin: 0;
     display: flex;

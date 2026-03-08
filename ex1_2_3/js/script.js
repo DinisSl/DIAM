@@ -136,3 +136,27 @@ document.getElementById("forward").addEventListener(
 //
 // Alínea d)
 //
+
+const dataEvento = new Date("2026-12-28T18:00:00");
+
+function atualizarContador() {
+    const dataAtual = new Date();
+    let dif = Math.floor((dataEvento - dataAtual) / 1000);
+
+    if (dif < 0) {
+        document.getElementById("contador").textContent = "O evento já começou!";
+        return;
+    }
+
+    const dias = Math.floor(dif / (60 * 60 * 24));
+    const horas = Math.floor((dif % (60 * 60 * 24)) / (60 * 60));
+    const minutos = Math.floor((dif % (60 * 60)) / 60);
+    const segundos = dif % 60;
+
+    document.getElementById("contador").textContent =
+        `Faltam ${dias} dias, ${horas}h ${minutos}m ${segundos}s`;
+}
+
+atualizarContador();
+
+setInterval(atualizarContador, 1000);
